@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Made Denis Candrika Laksana — Portfolio</title>
+    <meta name="description" content="Portfolio pribadi I Made Denis Candrika Laksana — Pelajar & Newbie Web Developer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="nav-logo">Denis<span>.</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <p class="hero-greeting">👋 Halo, saya</p>
+            <h1 class="hero-name">Denis Candrika</h1>
+            <p class="hero-title">Pelajar <span class="accent">&</span> Newbie Web Developer</p>
+            <p class="hero-desc">Saya membuat website modern, cepat, dan menarik. Mari berkolaborasi untuk mewujudkan
+                ide Anda!</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">Take A Look</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <p class="section-subtitle">Mengenal lebih dekat siapa saya</p>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-img-wrapper">
+                        <img src="profile.png" alt="Foto Denis Candrika"
+                            onerror="this.style.display='none'; this.parentElement.classList.add('no-img');">
+                        <div class="about-img-decoration"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Seorang pelajar yang sedang belajar coding 🚀</h3>
+                    <p>Saya adalah <strong>I Made Denis Candrika Laksana</strong>, seorang pelajar yang sedang belajar
+                        web development. Saya ingin terus berkembang dan membuat website yang menarik.
+                    </p>
+                    <p>Meskipun masih newbie, saya selalu semangat belajar hal baru dan terus mengasah kemampuan
+                        saya di HTML, CSS, dan JavaScript.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="1">0</span>
+                            <span class="stat-label">Proyek Selesai</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="2">0</span>
+                            <span class="stat-label">Bulan Pengalaman</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="0">0</span>
+                            <span class="stat-label">Klien Puas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section section-dark" id="education">
+        <div class="container">
+            <h2 class="section-title">My <span>Education</span></h2>
+            <p class="section-subtitle">Riwayat pendidikan saya</p>
+            <div class="education-timeline">
+                <div class="edu-item">
+                    <div class="edu-icon">✏️</div>
+                    <div class="edu-content">
+                        <h3>SD Saraswati 6 Denpasar</h3>
+                        <p class="edu-year">2014 — 2020</p>
+                        <p class="edu-desc">Menyelesaikan pendidikan dasar.</p>
+                    </div>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-icon">📚</div>
+                    <div class="edu-content">
+                        <h3>SMP Adhi Mekar Indonesia</h3>
+                        <p class="edu-year">2020 — 2023</p>
+                        <p class="edu-desc">Menyelesaikan pendidikan SMP dan mulai tertarik dengan teknologi.</p>
+                    </div>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-icon">🎓</div>
+                    <div class="edu-content">
+                        <h3>SMA Negeri 2 Abiansemal</h3>
+                        <p class="edu-year">2023 — Sekarang</p>
+                        <p class="edu-desc">Sedang menempuh pendidikan SMA dan belajar web development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-dark" id="skills">
+        <div class="container">
+            <h2 class="section-title">My <span>Skills</span></h2>
+            <p class="section-subtitle">Beberapa Bahasa yang saya kuasai</p>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🌐</div>
+                    <h3>HTML</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="40"></div>
+                    </div>
+                    <span class="skill-percent">40%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>CSS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="30"></div>
+                    </div>
+                    <span class="skill-percent">30%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚡</div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="15"></div>
+                    </div>
+                    <span class="skill-percent">15%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title">My <span>Projects</span></h2>
+            <p class="section-subtitle">Beberapa karya terbaik yang pernah saya buat</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">🔗 Lihat</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Calculator Simple</h3>
+                        <p>Kalkulator sederhana dengan operasi dasar seperti penjumlahan, pengurangan, perkalian, dan
+                            pembagian.</p>
+                        <div class="project-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">🔗 Lihat</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Website Portfolio</h3>
+                        <p>Website portfolio sebagai project akhir sekolah dengan desain modern dan responsif.</p>
+                        <div class="project-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-dark" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact <span>Me</span></h2>
+            <p class="section-subtitle">Anda tertarik?, ayo diskusi Bareng!!</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>deniscandrika5@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h4>Phone Number</h4>
+                            <p>+62 821-471-405-30</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Bali</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/DenisCandrikaa" target="_blank" class="social-link"
+                            title="GitHub">GH</a>
+                        <a href="https://instagram.com/deniscandrika1" target="_blank" class="social-link"
+                            title="Instagram">IG</a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Kirim Pesan 🚀</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <p>&copy; 2026 <strong>I Made Denis Candrika Laksana</strong>. Made with LOVE</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
